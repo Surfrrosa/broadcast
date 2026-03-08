@@ -21,47 +21,49 @@
     dayEl.textContent = getWarDay();
   }
 
-  // --- Redaction reveal ---
+  // --- Redaction reveal (index page only) ---
   var hero = document.getElementById('hero');
   var revealBtn = document.getElementById('reveal-btn');
 
-  function revealHero() {
-    if (hero.classList.contains('revealed')) return;
-    hero.classList.add('revealed');
+  if (hero) {
+    var siteNav = document.getElementById('site-nav');
 
-    // After reveal animation, add aria-live announcement
-    setTimeout(function () {
-      var announcement = document.createElement('div');
-      announcement.setAttribute('role', 'status');
-      announcement.setAttribute('aria-live', 'polite');
-      announcement.className = 'sr-only';
-      announcement.textContent = 'Content revealed: The United States is at war. Simultaneous military operations across 7+ countries. No congressional authorization. No major press inside the Pentagon.';
-      document.body.appendChild(announcement);
-    }, 1000);
-  }
+    function revealHero() {
+      if (hero.classList.contains('revealed')) return;
+      hero.classList.add('revealed');
+      if (siteNav) siteNav.classList.add('nav-inverted');
 
-  if (revealBtn) {
-    revealBtn.addEventListener('click', revealHero);
-  }
-
-  // Also reveal on scroll past hero
-  var heroRevealed = false;
-  window.addEventListener('scroll', function () {
-    if (heroRevealed) return;
-    if (window.scrollY > 100) {
-      heroRevealed = true;
-      revealHero();
+      setTimeout(function () {
+        var announcement = document.createElement('div');
+        announcement.setAttribute('role', 'status');
+        announcement.setAttribute('aria-live', 'polite');
+        announcement.className = 'sr-only';
+        announcement.textContent = 'Content revealed: The United States is at war. Simultaneous military operations across 7+ countries. No congressional authorization. No major press inside the Pentagon.';
+        document.body.appendChild(announcement);
+      }, 1000);
     }
-  }, { passive: true });
 
-  // Also reveal on keypress (space, enter, arrow down)
-  document.addEventListener('keydown', function (e) {
-    if (hero.classList.contains('revealed')) return;
-    if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowDown') {
-      e.preventDefault();
-      revealHero();
+    if (revealBtn) {
+      revealBtn.addEventListener('click', revealHero);
     }
-  });
+
+    var heroRevealed = false;
+    window.addEventListener('scroll', function () {
+      if (heroRevealed) return;
+      if (window.scrollY > 100) {
+        heroRevealed = true;
+        revealHero();
+      }
+    }, { passive: true });
+
+    document.addEventListener('keydown', function (e) {
+      if (hero.classList.contains('revealed')) return;
+      if (e.key === ' ' || e.key === 'Enter' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        revealHero();
+      }
+    });
+  }
 
   // --- Scroll-driven section fade-in ---
   var sections = document.querySelectorAll('.situation, .disputed, .blackout, .operations, .action');
