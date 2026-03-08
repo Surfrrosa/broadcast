@@ -1,13 +1,67 @@
 /* =========================================
    BROADCAST - app.js
-   Redaction reveal, war day counter,
-   scroll interactions.
+   Data loader, redaction reveal, war day
+   counter, scroll interactions.
    ========================================= */
 
 (function () {
   'use strict';
 
-  // --- War day counter ---
+  // --- Data loader ---
+  // Fetches data.json and populates elements with data-bind attributes.
+  // HTML elements keep their hardcoded fallback text in case fetch fails.
+
+  function resolvePath(obj, path) {
+    return path.split('.').reduce(function (o, key) {
+      return o && o[key];
+    }, obj);
+  }
+
+  function bindData(data) {
+    // Populate all data-bind elements
+    document.querySelectorAll('[data-bind]').forEach(function (el) {
+      var val = resolvePath(data, el.getAttribute('data-bind'));
+      if (val !== undefined) el.textContent = val;
+    });
+
+    // Populate all data-bind-href elements (source links)
+    document.querySelectorAll('[data-bind-href]').forEach(function (el) {
+      var val = resolvePath(data, el.getAttribute('data-bind-href'));
+      if (val !== undefined) el.href = val;
+    });
+
+    // Update war day from data
+    if (data.meta && data.meta.warStartDate) {
+      var start = new Date(data.meta.warStartDate);
+      var now = new Date();
+      var day = Math.max(1, Math.ceil((now - start) / (1000 * 60 * 60 * 24)));
+      var dayEl = document.getElementById('war-day');
+      if (dayEl) dayEl.textContent = day;
+    }
+
+    // Update all footer dates
+    if (data.meta && data.meta.lastUpdated) {
+      document.querySelectorAll('.footer-updated').forEach(function (el) {
+        el.textContent = 'Data updated: ' + data.meta.lastUpdated;
+      });
+    }
+
+    // Update silence block mark count
+    if (data.silence) {
+      silenceCount = data.silence.count || 165;
+    }
+  }
+
+  var silenceCount = 165;
+
+  fetch('data.json')
+    .then(function (r) { return r.json(); })
+    .then(bindData)
+    .catch(function () {
+      // Silently fail; HTML has hardcoded fallbacks
+    });
+
+  // --- War day counter (fallback if data.json fails) ---
   var WAR_START = new Date('2026-02-28T00:00:00Z');
 
   function getWarDay() {
@@ -66,16 +120,14 @@
   }
 
   // --- Scroll-driven section fade-in ---
-  var sections = document.querySelectorAll('.situation, .disputed, .blackout, .operations, .action');
+  var sections = document.querySelectorAll('.situation, .disputed, .blackout, .operations, .action, .impact-section');
 
-  // Add initial hidden state
   sections.forEach(function (section) {
     section.style.opacity = '0';
     section.style.transform = 'translateY(20px)';
     section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
   });
 
-  // Respect reduced motion
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   if (prefersReducedMotion) {
@@ -103,7 +155,6 @@
   }
 
   // --- Silence block: marks visualization ---
-  // Renders individual marks for the 165 number to give it human weight
   var silenceBlock = document.getElementById('silence');
   if (silenceBlock && !prefersReducedMotion) {
     var silenceObserver = new IntersectionObserver(function (entries) {
@@ -123,15 +174,12 @@
     marksEl.className = 'silence-marks';
     marksEl.setAttribute('aria-hidden', 'true');
 
-    // Insert after the silence-number
     var numberEl = container.querySelector('.silence-number');
     if (!numberEl) return;
     numberEl.parentNode.insertBefore(marksEl, numberEl.nextSibling);
-
-    // Hide the big number
     numberEl.style.display = 'none';
 
-    var count = 165;
+    var count = silenceCount;
     var i = 0;
     var batchSize = 5;
 
@@ -149,7 +197,6 @@
       }
     }
 
-    // Style the marks container
     marksEl.style.cssText = 'font-family: var(--font-mono); font-size: 0.9rem; letter-spacing: 2px; line-height: 1.8; color: var(--white); max-width: 500px; margin: 0 auto var(--space-md); word-break: break-all;';
 
     requestAnimationFrame(addBatch);

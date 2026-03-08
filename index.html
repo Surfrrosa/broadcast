@@ -51,48 +51,48 @@
         <h2 class="section-title">Day <span id="war-day">9</span> of Operation Epic Fury</h2>
         <p class="section-subtitle">US-Israel joint military campaign against Iran. Largest US military operation since the 2003 invasion of Iraq.</p>
 
-        <!-- Key figures -->
+        <!-- Key figures (data-bind reads from data.json; hardcoded text is fallback) -->
         <div class="stats-grid">
           <div class="stat-card">
-            <div class="stat-number" id="stat-killed">1,332</div>
-            <div class="stat-label">Reported killed in Iran</div>
+            <div class="stat-number" data-bind="dashboard.killed.value">1,332</div>
+            <div class="stat-label" data-bind="dashboard.killed.label">Reported killed in Iran</div>
             <div class="stat-source">
-              <a href="https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker" target="_blank" rel="noopener">Al Jazeera tracker</a>
+              <a href="https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker" data-bind-href="dashboard.killed.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.killed.sourceLabel">Al Jazeera tracker</span></a>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">6,000+</div>
-            <div class="stat-label">Wounded, including 300 children</div>
+            <div class="stat-number" data-bind="dashboard.wounded.value">6,000+</div>
+            <div class="stat-label" data-bind="dashboard.wounded.label">Wounded, including 300 children</div>
             <div class="stat-source">
-              <a href="https://www.aljazeera.com/news/2026/3/8/iran-war-what-is-happening-on-day-nine-of-us-israel-attacks" target="_blank" rel="noopener">Iranian Red Crescent</a>
+              <a href="https://www.aljazeera.com/news/2026/3/8/iran-war-what-is-happening-on-day-nine-of-us-israel-attacks" data-bind-href="dashboard.wounded.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.wounded.sourceLabel">Iranian Red Crescent</span></a>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">6</div>
-            <div class="stat-label">US service members killed (confirmed)</div>
+            <div class="stat-number" data-bind="dashboard.usKilled.value">6</div>
+            <div class="stat-label" data-bind="dashboard.usKilled.label">US service members killed (confirmed)</div>
             <div class="stat-source">
-              <a href="https://www.cnn.com/2026/03/02/politics/six-soldiers-killed-in-iranian-strike-kuwait" target="_blank" rel="noopener">CNN / Pentagon</a>
+              <a href="https://www.cnn.com/2026/03/02/politics/six-soldiers-killed-in-iranian-strike-kuwait" data-bind-href="dashboard.usKilled.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.usKilled.sourceLabel">CNN / Pentagon</span></a>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">4,000+</div>
-            <div class="stat-label">Targets struck in first 4 days</div>
+            <div class="stat-number" data-bind="dashboard.targetsStruck.value">4,000+</div>
+            <div class="stat-label" data-bind="dashboard.targetsStruck.label">Targets struck in first 4 days</div>
             <div class="stat-source">
-              <a href="https://www.euronews.com/2026/03/07/explosions-rock-tehran-as-us-official-warns-biggest-bombing-of-war-is-coming" target="_blank" rel="noopener">US officials / Airwars</a>
+              <a href="https://www.euronews.com/2026/03/07/explosions-rock-tehran-as-us-official-warns-biggest-bombing-of-war-is-coming" data-bind-href="dashboard.targetsStruck.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.targetsStruck.sourceLabel">US officials / Airwars</span></a>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">0</div>
-            <div class="stat-label">Congressional authorizations for this war</div>
+            <div class="stat-number" data-bind="dashboard.congressionalAuth.value">0</div>
+            <div class="stat-label" data-bind="dashboard.congressionalAuth.label">Congressional authorizations for this war</div>
             <div class="stat-source">
-              <a href="https://www.aclu.org/news/civil-liberties/your-questions-answered-can-congress-stop-president-trumps-illegal-war-against-iran" target="_blank" rel="noopener">ACLU</a>
+              <a href="https://www.aclu.org/news/civil-liberties/your-questions-answered-can-congress-stop-president-trumps-illegal-war-against-iran" data-bind-href="dashboard.congressionalAuth.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.congressionalAuth.sourceLabel">ACLU</span></a>
             </div>
           </div>
           <div class="stat-card">
-            <div class="stat-number">0</div>
-            <div class="stat-label">Major news orgs with Pentagon credentials</div>
+            <div class="stat-number" data-bind="dashboard.pentagonPress.value">0</div>
+            <div class="stat-label" data-bind="dashboard.pentagonPress.label">Major news orgs with Pentagon credentials</div>
             <div class="stat-source">
-              <a href="https://www.pbs.org/newshour/show/why-news-organizations-are-rejecting-the-pentagons-new-press-rules" target="_blank" rel="noopener">PBS NewsHour</a>
+              <a href="https://www.pbs.org/newshour/show/why-news-organizations-are-rejecting-the-pentagons-new-press-rules" data-bind-href="dashboard.pentagonPress.sourceUrl" target="_blank" rel="noopener"><span data-bind="dashboard.pentagonPress.sourceLabel">PBS NewsHour</span></a>
             </div>
           </div>
         </div>
