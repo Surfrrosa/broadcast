@@ -2,6 +2,23 @@
 
 Sourced, verified reporting on the 2026 Iran war and US military operations. Static site at declassify.news, deployed on Vercel.
 
+## Running
+
+```bash
+python -m http.server 8080
+```
+
+Open `http://localhost:8080`. No build step, no dependencies.
+
+## Key Files
+
+- `data.json` - single source of truth for all changing numbers
+- `index.html` - dashboard (hero, situation report, contested info, blackout, operations, actions)
+- `timeline.html` - chronology 2018-present
+- `impact.html` - economic, environmental, humanitarian, geopolitical impact
+- `app.js` - data loader, war day counter, redaction reveal, scroll effects
+- `style.css` - design system (brutalist, black/white/gray, IBM Plex)
+
 ## Session Protocol
 
 **Before starting any work, read the latest session log in `docs/sessions/`.**
