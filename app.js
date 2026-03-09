@@ -122,10 +122,14 @@
   // --- Scroll-driven section fade-in ---
   var sections = document.querySelectorAll('.situation, .disputed, .blackout, .operations, .action, .impact-section');
 
+  var isDesktop = window.innerWidth >= 768;
+
   sections.forEach(function (section) {
     section.style.opacity = '0';
     section.style.transform = 'translateY(20px)';
-    section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    section.style.transition = isDesktop
+      ? 'opacity 1.2s ease, transform 1.2s ease'
+      : 'opacity 0.6s ease, transform 0.6s ease';
   });
 
   var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -145,8 +149,8 @@
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      threshold: isDesktop ? 0.2 : 0.1,
+      rootMargin: isDesktop ? '0px 0px -120px 0px' : '0px 0px -50px 0px'
     });
 
     sections.forEach(function (section) {
