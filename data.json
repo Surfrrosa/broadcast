@@ -184,8 +184,8 @@
     "approveAlt": {
       "value": "54%",
       "label": "Approve (InsiderAdvantage poll, different methodology)",
-      "sourceUrl": "https://www.newsweek.com/how-donald-trumps-approval-rating-has-changed-since-launching-iran-war-11615467",
-      "sourceLabel": "Newsweek"
+      "sourceUrl": "https://insideradvantage.com/insideradvantage-national-flash-survey-voters-approve-trump-actions-related-to-iran-by-a-17-margin-54-37/",
+      "sourceLabel": "InsiderAdvantage"
     }
   },
   "defense": {
@@ -210,8 +210,8 @@
     "shahed": {
       "value": "$20,000-50,000",
       "label": "Estimated production cost per Shahed-136 drone (Iran)",
-      "sourceUrl": "https://www.iiss.org/research-paper/2023/10/irans-drone-arsenal/",
-      "sourceLabel": "IISS"
+      "sourceUrl": "https://www.twz.com/news-features/what-does-a-shahed-136-really-cost",
+      "sourceLabel": "The War Zone"
     },
     "iranBallistic": {
       "value": "$200,000-1,000,000",
