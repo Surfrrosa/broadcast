@@ -1,14 +1,14 @@
 {
   "meta": {
-    "lastUpdated": "March 10, 2026",
+    "lastUpdated": "March 11, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
     "killed": {
-      "value": "1,255",
+      "value": "1,300+",
       "label": "Reported killed in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker",
-      "sourceLabel": "Al Jazeera tracker"
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/11/iran-war-live-tehran-says-us-israel-hit-nearly-10000-civilian-sites",
+      "sourceLabel": "Al Jazeera"
     },
     "wounded": {
       "value": "12,000+",
@@ -23,10 +23,10 @@
       "sourceLabel": "NPR / Pentagon"
     },
     "targetsStruck": {
-      "value": "5,000+",
-      "label": "Targets struck in first 10 days",
-      "sourceUrl": "https://www.airforce-technology.com/news/centcom-us-iran-military-operation/",
-      "sourceLabel": "CENTCOM"
+      "value": "5,500+",
+      "label": "Targets struck in 12 days",
+      "sourceUrl": "https://defensescoop.com/2026/03/11/us-military-using-ai-against-iran-operation-epic-fury-adm-cooper/",
+      "sourceLabel": "CENTCOM / DefenseScoop"
     },
     "congressionalAuth": {
       "value": "0",
@@ -43,14 +43,14 @@
   },
   "disputed": {
     "iranianKilled": [
-      { "value": "1,255", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/2026/3/1/us-israel-attacks-on-iran-death-toll-and-injuries-live-tracker" },
+      { "value": "1,300+", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/11/iran-war-live-tehran-says-us-israel-hit-nearly-10000-civilian-sites" },
       { "value": "3,117", "who": "Iranian government", "sourceUrl": "https://www.aljazeera.com/news/2026/3/8/iran-war-what-is-happening-on-day-nine-of-us-israel-attacks" },
       { "value": "~7,000", "who": "US-based human rights group", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" },
       { "value": "32,000", "who": "President Trump (claimed)", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" }
     ],
     "usCasualties": [
       { "value": "7 killed", "who": "Pentagon / CENTCOM", "sourceUrl": "https://www.npr.org/2026/03/09/nx-s1-5742327/us-israel-iran-war-new-supreme-leader" },
-      { "value": "~140 wounded (108 returned to duty)", "who": "Pentagon (as of March 10)", "sourceUrl": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-10-26" },
+      { "value": "~140 wounded (108 returned to duty)", "who": "Pentagon (as of March 11)", "sourceUrl": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-11-26" },
       { "value": "680 killed/wounded (US and Israeli)", "who": "Iran's IRGC", "sourceUrl": "https://www.aljazeera.com/news/2026/3/7/trump-administration-denies-reports-that-iran-captured-us-soldiers" }
     ]
   },
@@ -60,21 +60,21 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$3.54",
-      "label": "National average gas price per gallon (March 10)",
+      "value": "$3.58",
+      "label": "National average gas price per gallon (March 11)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$0.56",
+      "value": "+$0.60",
       "label": "Gas price increase since the war started (~20%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$89",
+      "value": "$87",
       "label": "US crude per barrel (spiked to $120 on March 9)",
-      "sourceUrl": "https://www.oilpriceapi.com/live/wti-crude-oil-price",
+      "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
     "preWarCrude": {
@@ -138,28 +138,28 @@
   },
   "civilianInfra": {
     "homes": {
-      "value": "7,943",
+      "value": "16,000+",
       "label": "Homes damaged",
-      "sourceUrl": "https://wanaen.com/iran-red-crescent-reports-damage-to-over-19000-civilian-units/",
-      "sourceLabel": "Iranian Red Crescent / WANA"
+      "sourceUrl": "https://www.yahoo.com/news/articles/red-crescent-says-16-000-135840453.html",
+      "sourceLabel": "Iranian Red Crescent / Yahoo News"
     },
     "commercial": {
-      "value": "1,617",
+      "value": "3,300+",
       "label": "Commercial centers damaged",
       "sourceUrl": "https://www.aa.com.tr/en/middle-east/iran-red-crescent-says-6-668-civilian-sites-targeted-in-us-israeli-attacks/3853922",
       "sourceLabel": "Iranian Red Crescent / Anadolu"
     },
     "medical": {
-      "value": "32",
+      "value": "77",
       "label": "Medical facilities hit",
       "sourceUrl": "https://www.aa.com.tr/en/middle-east/iran-red-crescent-says-6-668-civilian-sites-targeted-in-us-israeli-attacks/3853922",
       "sourceLabel": "Iranian Red Crescent / Anadolu"
     },
     "whoAttacks": {
-      "value": "13",
+      "value": "18",
       "label": "Verified attacks on health infrastructure (WHO)",
-      "sourceUrl": "https://www.usnews.com/news/world/articles/2026-03-05/four-medics-killed-in-iran-ambulances-damaged-who-says",
-      "sourceLabel": "WHO / US News"
+      "sourceUrl": "https://www.deccanherald.com/world/middle-east/world-health-organization-confirms-18-attacks-on-healthcare-sites-in-iran-3928299",
+      "sourceLabel": "WHO / Deccan Herald"
     }
   },
   "polls": {
@@ -253,7 +253,7 @@
   "hormuz": {
     "tankerTraffic": {
       "value": "~0",
-      "label": "Tanker traffic through the strait as of March 10",
+      "label": "Tanker traffic through the strait as of March 11",
       "sourceUrl": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
       "sourceLabel": "2026 Strait of Hormuz crisis"
     },
