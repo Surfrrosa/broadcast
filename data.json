@@ -1,20 +1,20 @@
 {
   "meta": {
-    "lastUpdated": "March 11, 2026",
+    "lastUpdated": "March 12, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
     "killed": {
-      "value": "1,300+",
+      "value": "1,348",
       "label": "Reported killed in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/11/iran-war-live-tehran-says-us-israel-hit-nearly-10000-civilian-sites",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/12/iran-war-what-is-happening-on-day-13-of-us-israel-attacks",
       "sourceLabel": "Al Jazeera"
     },
     "wounded": {
-      "value": "12,000+",
+      "value": "17,000+",
       "label": "Reported wounded in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/10/iran-war-what-is-happening-on-day-11-of-us-israel-attacks",
-      "sourceLabel": "Iranian Red Crescent"
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/12/iran-war-what-is-happening-on-day-13-of-us-israel-attacks",
+      "sourceLabel": "Al Jazeera"
     },
     "usKilled": {
       "value": "7",
@@ -23,10 +23,10 @@
       "sourceLabel": "NPR / Pentagon"
     },
     "targetsStruck": {
-      "value": "5,500+",
-      "label": "Targets struck in 12 days",
-      "sourceUrl": "https://defensescoop.com/2026/03/11/us-military-using-ai-against-iran-operation-epic-fury-adm-cooper/",
-      "sourceLabel": "CENTCOM / DefenseScoop"
+      "value": "6,000+",
+      "label": "Targets struck in 13 days",
+      "sourceUrl": "https://www.stripes.com/theaters/middle_east/2026-03-12/centcom-update-march-12-6000-targets-21042030.html",
+      "sourceLabel": "CENTCOM / Stars and Stripes"
     },
     "congressionalAuth": {
       "value": "0",
@@ -43,7 +43,7 @@
   },
   "disputed": {
     "iranianKilled": [
-      { "value": "1,300+", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/11/iran-war-live-tehran-says-us-israel-hit-nearly-10000-civilian-sites" },
+      { "value": "1,348", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/2026/3/12/iran-war-what-is-happening-on-day-13-of-us-israel-attacks" },
       { "value": "4,300+", "who": "Hengaw (first 10 days; 390 civilian, 3,910 military)", "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-5" },
       { "value": "32,000", "who": "President Trump (claimed)", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" }
     ],
@@ -59,20 +59,20 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$3.58",
-      "label": "National average gas price per gallon (March 11)",
+      "value": "$3.60",
+      "label": "National average gas price per gallon (March 12)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$0.60",
-      "label": "Gas price increase since the war started (~20%)",
+      "value": "+$0.62",
+      "label": "Gas price increase since the war started (~21%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$87",
-      "label": "US crude per barrel (spiked to $120 on March 9)",
+      "value": "$96",
+      "label": "US crude per barrel (Brent above $100)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
@@ -85,10 +85,10 @@
   },
   "cost": {
     "dailyCost": {
-      "value": "~$1B/day",
-      "label": "Pentagon estimate for Operation Epic Fury",
-      "sourceUrl": "https://www.cnn.com/2026/03/06/politics/us-war-iran-cost",
-      "sourceLabel": "CNN"
+      "value": "$1.5-2B/day",
+      "label": "Congressional estimate; $11.3B in first week",
+      "sourceUrl": "https://www.militarytimes.com/pentagon-congress/2026/03/12/price-tag-for-epic-fury-tops-11-billion-in-first-six-days-pentagon-tells-congress/",
+      "sourceLabel": "Military Times"
     },
     "first100Hours": {
       "value": "$3.7B",
@@ -137,16 +137,16 @@
   },
   "civilianInfra": {
     "homes": {
-      "value": "16,000+",
+      "value": "17,353",
       "label": "Homes damaged",
-      "sourceUrl": "https://www.yahoo.com/news/articles/red-crescent-says-16-000-135840453.html",
-      "sourceLabel": "Iranian Red Crescent / Yahoo News"
+      "sourceUrl": "https://www.middleeastmonitor.com/20260311-21720-buildings-in-iran-hit-by-ongoing-us-israeli-strikes-iranian-red-crescent/",
+      "sourceLabel": "Iranian Red Crescent / MEMO"
     },
     "commercial": {
-      "value": "3,300+",
+      "value": "4,122",
       "label": "Commercial centers damaged",
-      "sourceUrl": "https://www.aa.com.tr/en/middle-east/iran-red-crescent-says-6-668-civilian-sites-targeted-in-us-israeli-attacks/3853922",
-      "sourceLabel": "Iranian Red Crescent / Anadolu"
+      "sourceUrl": "https://www.middleeastmonitor.com/20260311-21720-buildings-in-iran-hit-by-ongoing-us-israeli-strikes-iranian-red-crescent/",
+      "sourceLabel": "Iranian Red Crescent / MEMO"
     },
     "medical": {
       "value": "77",
@@ -252,7 +252,7 @@
   "hormuz": {
     "tankerTraffic": {
       "value": "~0",
-      "label": "Tanker traffic through the strait as of March 11",
+      "label": "Tanker traffic through the strait as of March 12",
       "sourceUrl": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
       "sourceLabel": "2026 Strait of Hormuz crisis"
     },
