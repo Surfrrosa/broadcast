@@ -1,30 +1,30 @@
 {
   "meta": {
-    "lastUpdated": "March 12, 2026",
+    "lastUpdated": "March 13, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
     "killed": {
-      "value": "1,348",
+      "value": "1,444",
       "label": "Reported killed in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/12/iran-war-what-is-happening-on-day-13-of-us-israel-attacks",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/13/iran-war-what-is-happening-on-day-14-of-us-israel-attacks",
       "sourceLabel": "Al Jazeera"
     },
     "wounded": {
-      "value": "17,000+",
+      "value": "18,551",
       "label": "Reported wounded in Iran",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/12/iran-war-what-is-happening-on-day-13-of-us-israel-attacks",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/13/iran-war-what-is-happening-on-day-14-of-us-israel-attacks",
       "sourceLabel": "Al Jazeera"
     },
     "usKilled": {
-      "value": "7",
-      "label": "US service members killed (confirmed)",
-      "sourceUrl": "https://www.npr.org/2026/03/09/nx-s1-5742327/us-israel-iran-war-new-supreme-leader",
-      "sourceLabel": "NPR / Pentagon"
+      "value": "13",
+      "label": "US service members killed (7 combat, 6 in KC-135 crash)",
+      "sourceUrl": "https://www.npr.org/2026/03/13/g-s1-113563/us-iran-war",
+      "sourceLabel": "NPR / CENTCOM"
     },
     "targetsStruck": {
       "value": "6,000+",
-      "label": "Targets struck in 13 days",
+      "label": "Targets struck in 14 days",
       "sourceUrl": "https://www.stripes.com/theaters/middle_east/2026-03-12/centcom-update-march-12-6000-targets-21042030.html",
       "sourceLabel": "CENTCOM / Stars and Stripes"
     },
@@ -43,13 +43,13 @@
   },
   "disputed": {
     "iranianKilled": [
-      { "value": "1,348", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/2026/3/12/iran-war-what-is-happening-on-day-13-of-us-israel-attacks" },
+      { "value": "1,444", "who": "Iran health ministry / Al Jazeera", "sourceUrl": "https://www.aljazeera.com/news/2026/3/13/iran-war-what-is-happening-on-day-14-of-us-israel-attacks" },
       { "value": "4,300+", "who": "Hengaw (first 10 days; 390 civilian, 3,910 military)", "sourceUrl": "https://hengaw.net/en/reports-and-statistics-1/2026/03/article-5" },
       { "value": "32,000", "who": "President Trump (claimed)", "sourceUrl": "https://en.wikipedia.org/wiki/2026_Iran_war" }
     ],
     "usCasualties": [
-      { "value": "7 killed", "who": "Pentagon / CENTCOM", "sourceUrl": "https://www.npr.org/2026/03/09/nx-s1-5742327/us-israel-iran-war-new-supreme-leader" },
-      { "value": "~140 wounded (108 returned to duty)", "who": "Pentagon (as of March 11)", "sourceUrl": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-11-26" },
+      { "value": "13 killed (7 combat, 6 KC-135 crash)", "who": "Pentagon / CENTCOM", "sourceUrl": "https://www.npr.org/2026/03/13/g-s1-113563/us-iran-war" },
+      { "value": "~140 wounded (108 returned to duty)", "who": "Pentagon (as of March 13)", "sourceUrl": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-11-26" },
       { "value": "680 killed/wounded (US and Israeli)", "who": "Iran's IRGC", "sourceUrl": "https://www.aljazeera.com/news/2026/3/7/trump-administration-denies-reports-that-iran-captured-us-soldiers" }
     ]
   },
@@ -59,20 +59,20 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$3.60",
-      "label": "National average gas price per gallon (March 12)",
+      "value": "$3.63",
+      "label": "National average gas price per gallon (March 13)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$0.62",
-      "label": "Gas price increase since the war started (~21%)",
+      "value": "+$0.69",
+      "label": "Gas price increase since the war started (~23%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "crudePrice": {
-      "value": "$96",
-      "label": "US crude per barrel (Brent above $100)",
+      "value": "$99",
+      "label": "US crude per barrel (Brent at $103)",
       "sourceUrl": "https://oilprice.com/",
       "sourceLabel": "Oilprice"
     },
@@ -185,6 +185,18 @@
       "label": "Oppose sending ground troops to Iran",
       "sourceUrl": "https://poll.qu.edu/poll-release?releaseid=3952",
       "sourceLabel": "Quinnipiac (March 9)"
+    },
+    "wapoSupport": {
+      "value": "42%",
+      "label": "Support war (65% say goals not clearly explained)",
+      "sourceUrl": "https://www.washingtonpost.com/politics/interactive/2026/iran-war-strikes-poll/",
+      "sourceLabel": "Washington Post (March 12)"
+    },
+    "wapoOppose": {
+      "value": "40%",
+      "label": "Oppose war (down from 56% in first week)",
+      "sourceUrl": "https://www.washingtonpost.com/politics/interactive/2026/iran-war-strikes-poll/",
+      "sourceLabel": "Washington Post (March 12)"
     }
   },
   "defense": {
