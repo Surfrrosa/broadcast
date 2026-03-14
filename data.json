@@ -25,7 +25,7 @@
     "targetsStruck": {
       "value": "15,000+",
       "label": "Targets struck in 15 days (US-Israeli campaign)",
-      "sourceUrl": "https://www.npr.org/2026/03/14/g-s1-113891/iran-war-two-week-accounting",
+      "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
     "congressionalAuth": {
@@ -49,7 +49,7 @@
     ],
     "usCasualties": [
       { "value": "13 killed (7 combat, 6 KC-135 crash)", "who": "Pentagon / CENTCOM", "sourceUrl": "https://www.npr.org/2026/03/13/g-s1-113563/us-iran-war" },
-      { "value": "~140 wounded (108 returned to duty)", "who": "Pentagon (as of March 13)", "sourceUrl": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-11-26" },
+      { "value": "~140 wounded (108 returned to duty)", "who": "Pentagon (as of March 14)", "sourceUrl": "https://www.cnn.com/world/live-news/iran-war-us-israel-trump-03-11-26" },
       { "value": "680 killed/wounded (US and Israeli)", "who": "Iran's IRGC", "sourceUrl": "https://www.aljazeera.com/news/2026/3/7/trump-administration-denies-reports-that-iran-captured-us-soldiers" }
     ]
   },
@@ -139,13 +139,13 @@
     "homes": {
       "value": "19,775",
       "label": "Homes damaged",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260314-iranian-red-crescent-updates-civilian-damage-assessment/",
+      "sourceUrl": "https://www.middleeastmonitor.com/20260311-21720-buildings-in-iran-hit-by-ongoing-us-israeli-strikes-iranian-red-crescent/",
       "sourceLabel": "Iranian Red Crescent / MEMO"
     },
     "commercial": {
       "value": "4,511",
       "label": "Commercial centers damaged",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260314-iranian-red-crescent-updates-civilian-damage-assessment/",
+      "sourceUrl": "https://www.middleeastmonitor.com/20260311-21720-buildings-in-iran-hit-by-ongoing-us-israeli-strikes-iranian-red-crescent/",
       "sourceLabel": "Iranian Red Crescent / MEMO"
     },
     "medical": {
