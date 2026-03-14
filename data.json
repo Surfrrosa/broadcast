@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "March 13, 2026",
+    "lastUpdated": "March 14, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
@@ -23,10 +23,10 @@
       "sourceLabel": "NPR / CENTCOM"
     },
     "targetsStruck": {
-      "value": "6,000+",
-      "label": "Targets struck in 14 days",
-      "sourceUrl": "https://www.stripes.com/theaters/middle_east/2026-03-12/centcom-update-march-12-6000-targets-21042030.html",
-      "sourceLabel": "CENTCOM / Stars and Stripes"
+      "value": "15,000+",
+      "label": "Targets struck in 15 days (US-Israeli campaign)",
+      "sourceUrl": "https://www.npr.org/2026/03/14/g-s1-113891/iran-war-two-week-accounting",
+      "sourceLabel": "NPR"
     },
     "congressionalAuth": {
       "value": "0",
@@ -59,14 +59,14 @@
   },
   "energy": {
     "gasPrice": {
-      "value": "$3.63",
-      "label": "National average gas price per gallon (March 13)",
+      "value": "$3.68",
+      "label": "National average gas price per gallon (March 14)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
     "gasIncrease": {
-      "value": "+$0.69",
-      "label": "Gas price increase since the war started (~23%)",
+      "value": "+$0.74",
+      "label": "Gas price increase since the war started (~25%)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
@@ -137,15 +137,15 @@
   },
   "civilianInfra": {
     "homes": {
-      "value": "17,353",
+      "value": "19,775",
       "label": "Homes damaged",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260311-21720-buildings-in-iran-hit-by-ongoing-us-israeli-strikes-iranian-red-crescent/",
+      "sourceUrl": "https://www.middleeastmonitor.com/20260314-iranian-red-crescent-updates-civilian-damage-assessment/",
       "sourceLabel": "Iranian Red Crescent / MEMO"
     },
     "commercial": {
-      "value": "4,122",
+      "value": "4,511",
       "label": "Commercial centers damaged",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260311-21720-buildings-in-iran-hit-by-ongoing-us-israeli-strikes-iranian-red-crescent/",
+      "sourceUrl": "https://www.middleeastmonitor.com/20260314-iranian-red-crescent-updates-civilian-damage-assessment/",
       "sourceLabel": "Iranian Red Crescent / MEMO"
     },
     "medical": {
@@ -264,7 +264,7 @@
   "hormuz": {
     "tankerTraffic": {
       "value": "~0",
-      "label": "Tanker traffic through the strait as of March 12",
+      "label": "Tanker traffic through the strait as of March 14",
       "sourceUrl": "https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis",
       "sourceLabel": "2026 Strait of Hormuz crisis"
     },
