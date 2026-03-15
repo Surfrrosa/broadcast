@@ -1,6 +1,6 @@
 {
   "meta": {
-    "lastUpdated": "March 14, 2026",
+    "lastUpdated": "March 15, 2026",
     "warStartDate": "2026-02-28T00:00:00Z"
   },
   "dashboard": {
@@ -24,7 +24,7 @@
     },
     "targetsStruck": {
       "value": "15,000+",
-      "label": "Targets struck in 15 days (US-Israeli campaign)",
+      "label": "Targets struck in 16 days (US-Israeli campaign)",
       "sourceUrl": "https://www.npr.org/2026/03/14/nx-s1-5746623/iran-war-cost-deaths",
       "sourceLabel": "NPR"
     },
@@ -60,7 +60,7 @@
   "energy": {
     "gasPrice": {
       "value": "$3.68",
-      "label": "National average gas price per gallon (March 14)",
+      "label": "National average gas price per gallon (March 15)",
       "sourceUrl": "https://gasprices.aaa.com/",
       "sourceLabel": "AAA"
     },
@@ -137,16 +137,16 @@
   },
   "civilianInfra": {
     "homes": {
-      "value": "19,775",
+      "value": "36,489",
       "label": "Homes damaged",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260311-21720-buildings-in-iran-hit-by-ongoing-us-israeli-strikes-iranian-red-crescent/",
-      "sourceLabel": "Iranian Red Crescent / MEMO"
+      "sourceUrl": "https://www.aa.com.tr/en/middle-east/over-42-000-civilian-structures-damaged-in-us-israeli-airstrikes-on-iran/3864566",
+      "sourceLabel": "Iranian Red Crescent / Anadolu"
     },
     "commercial": {
-      "value": "4,511",
+      "value": "6,179",
       "label": "Commercial centers damaged",
-      "sourceUrl": "https://www.middleeastmonitor.com/20260311-21720-buildings-in-iran-hit-by-ongoing-us-israeli-strikes-iranian-red-crescent/",
-      "sourceLabel": "Iranian Red Crescent / MEMO"
+      "sourceUrl": "https://www.aa.com.tr/en/middle-east/over-42-000-civilian-structures-damaged-in-us-israeli-airstrikes-on-iran/3864566",
+      "sourceLabel": "Iranian Red Crescent / Anadolu"
     },
     "medical": {
       "value": "77",

@@ -998,6 +998,44 @@ a:focus-visible {
   color: var(--gray-400);
 }
 
+/* --- Timeline Week Grouping --- */
+.tl-week {
+  margin-bottom: var(--space-md);
+}
+
+.tl-week summary {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  cursor: pointer;
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--gray-800);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.tl-week summary::-webkit-details-marker {
+  display: none;
+}
+
+.tl-week summary::before {
+  content: '+';
+  font-size: 1rem;
+  color: var(--gray-600);
+  transition: transform 0.15s;
+}
+
+.tl-week[open] summary::before {
+  content: '\2212';
+}
+
+.tl-week summary:hover {
+  color: var(--white);
+}
+
 /* =========================================
    ACCESSIBILITY & REDUCED MOTION
    ========================================= */
